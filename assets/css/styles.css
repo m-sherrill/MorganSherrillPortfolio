@@ -1,0 +1,85 @@
+
+body {
+    background-color: #5f69ae;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+header .name {
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 20%;
+  }
+header h1 {
+    font-size: 300%;
+    margin-left: 15px;
+    color: Black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: 15px;
+    
+}
+header nav ul li {
+    display: inline-flex;
+    align-items: flex-end;
+    margin-left: 25px;
+}
+
+.nav-buttons {
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 20%;
+  }
+
+.nav-buttons:hover{
+    text-decoration: 2px wavy underline black;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    font-size: 150%;
+  }
+
+.underheader {
+        background-color: white;
+        background-image: url("../images/pexels-dana-tentis-370799.jpg");
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        border: 1px white;
+        border-style: solid none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+.underheader h2 {
+    padding: 5px;
+    width: 25%;
+    font-size: 150%;
+    text-shadow: 1px 1px white;
+    }
+
+.about-me {
+    height: 200px;
+}
+
+.work {
+    height: 400px;
+}
+
+.contact-me {
+    height: 100px;
+}

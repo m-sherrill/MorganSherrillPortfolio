@@ -72,13 +72,15 @@ article {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    line-height: 2em;
 }
 
 aside {
     flex:1;
     background-color: #7ab6c5;
-    padding: 20px;
+    padding: 10px;
     text-align: right;
+    font-size: 200%;
 }
 
 .content {
@@ -129,30 +131,33 @@ article ul li:nth-child(1) {
     padding-top: 5px;
     margin: 15px;
     align-content: center;
+    color: white;
+    font-size: 150%;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
 }
 
 .card:hover {
     background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #b5f2fa 0%, #303457 100%), url(../images/pexels-dana-tentis-370799.jpg);
-}
-
-.card h1 {
-    font-size: 200%;
-    text-align: center;
+    background-image: linear-gradient( rgba(136, 137, 167, 0.5), rgba(48, 54, 88, 0.53)), url(../images/pexels-dana-tentis-370799.jpg);
 }
 
 .cardheader {
-    height: 50px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
     position: absolute;
-    bottom: 15px;
-    left: 25px;
-}
-
-.cardheader::after {
-    border: 1px solid white;
+    bottom: 0px;
+    left: 0px;
+    background-color: #313557;
+    padding: 10px;
 }
 
 /* Contact Container */
+
+#contact-content {
+    font-size: 150%;
+    margin: 20px;
+}
 
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */

@@ -11,7 +11,7 @@ body {
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-dana-tentis-370799.jpg);
-    height: 500px;
+    height: auto;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -46,8 +46,8 @@ header .morganphoto{
 .morganphoto img {
     border: 2px solid black;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     margin-right: 15px;
 }
 

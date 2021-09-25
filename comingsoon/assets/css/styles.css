@@ -1,0 +1,27 @@
+/* body */
+
+body {
+    height: 100%, background-color: white;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    }
+    
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-dana-tentis-370799.jpg);
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    }
+    
+main h1 {
+    font-size: 300%;
+    text-shadow: 1px 1px 3px #000000;
+    font-family: 'Architects Daughter', cursive;
+    }
+    
+main h3 {
+    font-size: 150%;
+    text-shadow: 1px 1px 5px #000000;
+    }

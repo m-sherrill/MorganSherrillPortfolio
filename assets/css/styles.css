@@ -23,12 +23,13 @@ a:visited {
 /* header and navigation */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-dana-tentis-370799.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-sohail-na-807598.jpg);
     height: auto;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 header h1 {
@@ -46,9 +47,9 @@ header .name {
     color: var(--font-color-headers);
     text-align: center;
     padding: 20px 10px;
-    flex: 1;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
+    margin: 30px;
 }
 
 header .morganphoto{
@@ -57,11 +58,12 @@ header .morganphoto{
 }
 
 .morganphoto img {
-    border: 2px solid var(--border-color);
+    border: 2px solid #fff;
     border-radius: 50%;
     height: 300px;
     width: 300px;
     margin-right: 15px;
+    box-shadow: 1px 1px 5px var(--shadow-color);
 }
 
 header nav {
@@ -163,11 +165,6 @@ aside {
     text-align: center;
 }
 
-.card:hover {
-    background-color: #FFDEE9;
-    background-image: linear-gradient( rgba(136, 137, 167, 0.5), rgba(48, 54, 88, 0.53)), url(../images/pexels-dana-tentis-370799.jpg);
-}
-
 .cardheader {
     color: var(--font-color-headers);
     text-shadow: 1px 1px 5px rgb(0, 0, 0);
@@ -178,6 +175,59 @@ aside {
     background-color: #313557;
     padding: 10px;
 }
+
+/* Work images with hovering */
+
+#work-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/smaller/pexels-joey-kyber-119591.jpg);
+    background-size: cover;
+}
+
+#work-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/smaller/pexels-peter-fazekas-1653631.jpg);
+    background-size: cover;
+}
+
+#work-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/smaller/pexels-pixabay-268908.jpg);
+    background-size: cover;
+}
+
+#work-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/smaller/pexels-richa-sharma-4215449.jpg);
+    background-size: cover;
+}
+
+#work-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/smaller/pexels-sơn-bờm-1819713.jpg);
+    background-size: cover;
+}
+
+#work-1:hover {
+    background-image: linear-gradient( rgba(136, 137, 167, 0.5), rgba(48, 54, 88, 0.53)), url(../images/smaller/pexels-joey-kyber-119591.jpg);
+    background-size: cover;
+}
+
+#work-2:hover {
+    background-image: linear-gradient( rgba(136, 137, 167, 0.5), rgba(48, 54, 88, 0.53)), url(../images/smaller/pexels-peter-fazekas-1653631.jpg);
+    background-size: cover;
+}
+
+#work-3:hover {
+    background-image: linear-gradient( rgba(136, 137, 167, 0.5), rgba(48, 54, 88, 0.53)), url(../images/smaller/pexels-pixabay-268908.jpg);
+    background-size: cover;
+}
+
+#work-4:hover {
+    background-image: linear-gradient( rgba(136, 137, 167, 0.5), rgba(48, 54, 88, 0.53)), url(../images/smaller/pexels-richa-sharma-4215449.jpg);
+    background-size: cover;
+}
+
+#work-5:hover {
+    background-image: linear-gradient( rgba(136, 137, 167, 0.5), rgba(48, 54, 88, 0.53)), url(../images/smaller/pexels-sơn-bờm-1819713.jpg);
+    background-size: cover;
+}
+
 
 /* Contact Container */
 
@@ -192,7 +242,7 @@ aside {
 /* Footer */
 
 footer {
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-dana-tentis-370799.jpg);
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-sohail-na-807598.jpg);
 background-size: cover;
 height: auto;
 padding: 25px;

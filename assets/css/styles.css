@@ -11,11 +11,11 @@ body {
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-dana-tentis-370799.jpg);
-    backgroung-size: cover;
+    height: 500px;
+    background-size: cover;
     display: flex;
-    height: auto;
     flex-wrap: wrap;
-    border-bottom: 2px solid black;
+    align-content: center;
 }
 
 header h1 {
@@ -35,13 +35,29 @@ header .name {
     text-align: center;
     padding: 20px 10px;
     flex: 1;
+    width: 100%;
+}
+
+header .morganphoto{
+    text-align: center;
+    width: 100%
+}
+
+.morganphoto img {
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin-right: 15px;
 }
 
 header nav {
     display: flex;
     padding: 20px;
     text-align: center;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .nav-button {
@@ -58,35 +74,41 @@ header nav {
     text-decoration: 5px underline black;
 }
 
-
 a:link,
 a:visited {
     text-decoration: none;
     font-size: 150%;
+    color: black;
 }
-
 
 /* Formatting */
 
-article {
+.top-bottom-space {
+    height: 50px;
+}
+
+.wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    line-height: 2em;
+}
+
+.space {
+    height: 50px;
+    width: 100%;
 }
 
 aside {
     flex:1;
-    background-color: #7ab6c5;
     padding: 10px;
     text-align: right;
     font-size: 200%;
+    border-right: 2px solid black;
 }
 
 .content {
     flex:5;
-    background-color: #7ab6c5;
-    padding: 20px;
+    padding: 25px;
     text-align: start;
     line-height: normal;
     width: 100%;
@@ -96,41 +118,32 @@ aside {
 
 /* About Me Container */
 
-.floatleft {
-    float: left;
-    border: 2px solid black;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    margin-right: 15px;
-}
+
 
 
 /* Work Container */
 
-article ul {
+.content ul {
     display: flex;
     flex-wrap: wrap;
 }
 
-.work-content {
+.content li {
     flex: 50%;
 }
 
-article ul li:nth-child(1) {
+.work-content li:nth-child(1) {
    flex: 100%;
 }
 
 .card {
+    position: relative;
     width: auto;
     height: 200px;
-    background-color: white;
     border: 6px solid white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-dana-tentis-370799.jpg);
-    position: relative;
-    padding-top: 5px;
     margin: 15px;
-    align-content: center;
+    padding-top: 15px;
     color: white;
     font-size: 150%;
     text-shadow: 1px 1px 5px black;
@@ -159,15 +172,42 @@ article ul li:nth-child(1) {
     margin: 20px;
 }
 
+footer {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-dana-tentis-370799.jpg);
+height: 300px;
+background-size: cover;
+display: flex;
+flex-wrap: wrap;
+border-bottom: 2px solid black;
+}
+
+
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
-    main,
-    header,
-    nav,
-    article {
-      flex-direction: column;
-    }
     
+header,
+nav,
+.wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+}
+
+.name {
+    order: 1;
+    width: 100%;
+}
+
+.morganphoto {
+    order: 2;
+    width: 100%
+}
+
+header nav {
+      width: 100%;
+      order: 3;
+    }
+
     aside {
       order: 1;
       width: 100%;
@@ -177,24 +217,3 @@ article ul li:nth-child(1) {
       width: 100%;
     }
 
-    header {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-dana-tentis-370799.jpg);
-    }
-
-    nav {
-      border: 1px;
-    }
-
-    .nav-button {
-        width: 200px;
-        margin: 10px;
-        padding: 20px;
-        background-color: white;
-        border: 2px solid black;
-        border-radius: 0;
-        text-decoration: 5px underline black;
-    }
-    
-    .nav-button:hover {
-        text-decoration: 5px underline black;
-    }

@@ -147,8 +147,8 @@ aside {
 }
 
 .work-content li:nth-child(1) {
-   flex: 100%;
-}
+    flex: 100%;
+ }
 
 .card {
     position: relative;
@@ -159,7 +159,7 @@ aside {
     margin: 15px;
     padding-top: 15px;
     color: var(--font-color-headers);
-    font-size: 150%;
+    font-size: 200%;
     text-shadow: 1px 1px 5px var(--shadow-color);
     text-align: center;
 }
@@ -168,14 +168,14 @@ aside {
     color: var(--font-color-headers);
     text-shadow: 1px 1px 5px rgb(0, 0, 0);
     position: absolute;
-    font-size: 100%;
+    font-size: 50%;
     bottom: 0px;
     left: 0px;
-    background-color: #313557;
+    background-color: #013220;
     padding: 10px;
 }
 
-/* Work images with hovering */
+/* Work images */
 
 #work-1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/smaller/pexels-joey-kyber-119591.jpg);
@@ -201,6 +201,8 @@ aside {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/smaller/pexels-sơn-bờm-1819713.jpg);
     background-size: cover;
 }
+
+/* Work hover */
 
 #work-1:hover {
     background-image: linear-gradient( rgba(136, 137, 167, 0.5), rgba(48, 54, 88, 0.53)), url(../images/smaller/pexels-joey-kyber-119591.jpg);
@@ -280,16 +282,20 @@ nav,
 header nav {
       width: 100%;
       order: 3;
-    }
+}
 
-    aside {
+aside {
       order: 1;
       width: 100%;
       text-decoration: underline;
       border-right: 0;
-    }
-    .content {
+}
+
+.content {
       order: 2;
       width: 100%;
-    }
+}
 
+.work-content li { 
+    flex: 100%;
+ }

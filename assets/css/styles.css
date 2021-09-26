@@ -3,19 +3,18 @@
     --font-color-content: #000000;
     --shadow-color: #000000;
     --border-color: #000000;
-  }
-    
-    /* body and misc styles */
+}
+
+/* body and misc styles */
 
 body {
     height: 100%;
     background-color: white;
     font-size: 16px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-a:link,
-a:visited {
+a:link, a:visited {
     text-decoration: none;
     color: var(--font-color-headers);
 }
@@ -52,7 +51,7 @@ header .name {
     flex: 100%;
 }
 
-header .morganphoto{
+header .morganphoto {
     text-align: center;
     flex: 100%;
 }
@@ -89,8 +88,7 @@ header nav {
     text-decoration: 5px underline black;
 }
 
-nav a:link,
-nav a:visited {
+nav a:link, nav a:visited {
     text-decoration: none;
     font-size: 150%;
     color: var(--font-color-content);
@@ -114,7 +112,7 @@ nav a:visited {
 }
 
 aside {
-    flex:1;
+    flex: 1;
     padding: 10px;
     text-align: right;
     font-size: 200%;
@@ -122,7 +120,7 @@ aside {
 }
 
 .content {
-    flex:5;
+    flex: 5;
     padding: 25px;
     text-align: start;
     line-height: normal;
@@ -130,11 +128,9 @@ aside {
     margin: 0px;
 }
 
-
 /* About Me Container */
 
-
-
+/* no extra formatting here */
 
 /* Work Container */
 
@@ -149,7 +145,7 @@ aside {
 
 .work-content li:nth-child(1) {
     flex: 100%;
- }
+}
 
 .card {
     position: relative;
@@ -230,7 +226,6 @@ aside {
     background-size: cover;
 }
 
-
 /* Contact Container */
 
 .contact-content {
@@ -240,63 +235,61 @@ aside {
     justify-content: space-evenly;
 }
 
-
 /* Footer */
 
 footer {
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-sohail-na-807598.jpg);
-background-size: cover;
-height: auto;
-padding: 25px;
-align-content: center;
-color: var(--font-color-headers);
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-justify-content: center;
-border-bottom: 2px solid var(--border-color);
-text-align: center;
-}
-
-
-@media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
-    
-header,
-nav,
-.wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pexels-sohail-na-807598.jpg);
+    background-size: cover;
+    height: auto;
+    padding: 25px;
+    align-content: center;
+    color: var(--font-color-headers);
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: auto;
+    justify-content: center;
+    border-bottom: 2px solid var(--border-color);
+    text-align: center;
 }
 
-.name {
-    order: 1;
-    width: 100%;
+footer a:visited, footer a:link {
+    color: lightgreen;
 }
 
-.morganphoto {
-    order: 2;
-    width: 100%
+footer a:hover {
+    color: white;
 }
 
-header nav {
-      width: 100%;
-      order: 3;
-}
+/* Responsive Design */
 
-aside {
-      order: 1;
-      width: 100%;
-      text-decoration: underline;
-      border-right: 0;
-}
-
-.content {
-      order: 2;
-      width: 100%;
-}
-
-.work-content li { 
-    flex: 100%;
- }
+@media screen and (max-width: 768px) {
+    header, nav, .wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+    }
+    .name {
+        order: 1;
+        width: 100%;
+    }
+    .morganphoto {
+        order: 2;
+        width: 100%
+    }
+    header nav {
+        width: 100%;
+        order: 3;
+    }
+    aside {
+        order: 1;
+        width: 100%;
+        text-decoration: underline;
+        border-right: 0;
+    }
+    .content {
+        order: 2;
+        width: 100%;
+    }
+    .work-content li {
+        flex: 100%;
+    }
